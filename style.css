@@ -1,0 +1,57 @@
+body {
+    font-family: Arial,  sans-serif; /* La famiglia del font */
+    font-size: 11px; /* La dimensione del font principale nei tag <p></p> */
+    background-color: #171717; /* Il colore dello sfondo della pagina web */
+    color: #cbcbcb; /* Il colore del testo */
+    animation : slideIn 2s; /* Aggiunge l'animazione di scorrimento alla pagina */
+    animation : text_shadow_pulse 3s infinite; /* Aggiunge l'animazione di pulsazione all'ombra del testo */
+}
+h1 {
+    color: #c16700; /* Il colore dell'intestazione */
+    font-size: 24px; /* La dimensione del font dell'intestazione */
+    font-family: Georgia, serif; /* La famiglia del font usata nell'intestazione */
+    animation : rainbow 5s infinite; /* Aggiunge l'animazione arcobaleno all'intestazione */
+    text-align: center;
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes text_shadow_pulse {
+    0% {
+        text-shadow: 0 0 5px #3b3a3a;
+    }
+    50% {
+        text-shadow: 0 0 20px rgb(38, 38, 36);
+    }
+    100% {
+        text-shadow: 0 0 5px #282121;
+    }
+}
+
